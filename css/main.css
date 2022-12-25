@@ -2,12 +2,13 @@
   --black: #272a31;
   --medium: #545454;
   --light: #d3d3d3;
+  --white: #f9f9f9;
 
   --orange: #ec5242;
   
 }
 
-html {
+html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,34 +22,89 @@ html {
   box-sizing: inherit;
 }
 
+h2 {
+  color: var(--orange);
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1 {
+  color: var(--orange);
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0 25px 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 900;
+  color: var(--medium);
+  margin: 15px 0 7px 0;
+}
+
+p {
+    margin: 0;
+    color: var(--medium);
+}
+
+header {
+  background-color: var(--white);
+}
+
 nav {
-    padding: 10px 15px;
+  padding: 18px 23px;
+}
+
+.texture-text {
+  background: url(../img/orange-bg.png) no-repeat center center;
+  background-size: cover;
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip:text;  
+}
+
+.p-box {
+  border: 3px solid white;
+  padding: 15px;
+  line-height: 22px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--medium);
+  background-color: var(--white);
 }
 
 .hamburguer-menu-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 5px;
-    cursor: pointer;
-    user-select: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .hamburguer-menu-icon > div {
-    background-color: var(--medium);
-    width: 30px;
-    height: 6px;
-    transition: background-color 0.2s linear, transform 0.2s linear;
+  background-color: var(--medium);
+  width: 30px;
+  height: 6px;
+  transition: background-color 0.2s linear, transform 0.2s linear;
 }
 
 .active-menu div:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+  transform: translateY(11px) rotate(45deg);
 }
 
 .active-menu div:nth-child(2) {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .active-menu div:nth-child(3) {
-    transform: translateY(-11px) rotate(-45deg);
+  transform: translateY(-11px) rotate(-45deg);
 }
+
+.header-content {
+  padding: 30px 20px 65px 20px;
+}
+
