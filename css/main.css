@@ -1,7 +1,10 @@
 :root {
   --black: #272a31;
-  --orange: #ec5242;
+  --medium: #545454;
   --light: #d3d3d3;
+
+  --orange: #ec5242;
+  
 }
 
 html {
@@ -16,4 +19,36 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+nav {
+    padding: 10px 15px;
+}
+
+.hamburguer-menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.hamburguer-menu-icon > div {
+    background-color: var(--medium);
+    width: 30px;
+    height: 6px;
+    transition: background-color 0.2s linear, transform 0.2s linear;
+}
+
+.active-menu div:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.active-menu div:nth-child(2) {
+    background-color: transparent;
+}
+
+.active-menu div:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
 }
