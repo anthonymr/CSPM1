@@ -4,6 +4,8 @@
   --light: #d3d3d3;
   --white: #f9f9f9;
 
+  --dark-blue: #272a33;
+
   --orange: #ec5242;
   
 }
@@ -23,7 +25,6 @@ html, body {
 }
 
 h2 {
-  color: var(--orange);
   font-weight: 400;
   font-size: 18px;
   margin: 0;
@@ -60,6 +61,10 @@ nav {
   padding: 18px 23px;
 }
 
+.t-orange {
+    color: var(--orange);
+}
+
 .texture-text {
   background: url(../img/orange-bg.png) no-repeat center center;
   background-size: cover;
@@ -77,6 +82,13 @@ nav {
   font-size: 14px;
   color: var(--medium);
   background-color: var(--white);
+}
+
+.orange-line {
+    background-color: var(--orange);
+    width: 40px;
+    height: 1px;
+    margin: 15px 0;
 }
 
 .hamburguer-menu-icon {
@@ -111,3 +123,59 @@ nav {
   padding: 30px 20px 65px 20px;
 }
 
+.main-program {
+  background-color: var(--dark-blue);
+  padding: 40px 20px;
+  background-image: url('../img/cross.svg');
+  background-size: 32px;
+  color: var(--white);
+}
+
+.main-progam__title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-program__program {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.main-program__program > li {
+  background-color: rgba(255, 255, 255, 0.122);
+  padding: 20px 0;
+  width: calc(100% + 10px);
+  margin: 8px -5px;
+  display: flex;
+}
+
+.program__image {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program__image img {
+  width: 30px;
+}
+
+.program__title {
+  width: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.program__title h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.program__content {
+  width: calc(100% - 150px);
+  font-size: 11px;
+  padding-right: 10px;
+  line-height: 16px;
+}
