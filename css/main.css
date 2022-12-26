@@ -51,6 +51,9 @@ p {
 
 header {
   background-color: var(--white);
+  background-image: url('../img/background.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 nav {
