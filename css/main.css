@@ -61,6 +61,13 @@ nav {
   padding: 18px 23px;
 }
 
+button {
+    color: var(--white);
+    background-color: var(--orange);
+    border: none;
+    padding: 20px 40px;
+}
+
 .t-orange {
     color: var(--orange);
 }
