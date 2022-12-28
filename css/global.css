@@ -65,7 +65,11 @@ button {
     color: var(--white);
     background-color: var(--orange);
     border: none;
-    padding: 20px 40px;
+    padding: 25px 40px;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .t-orange {
@@ -93,9 +97,16 @@ button {
 
 .orange-line {
     background-color: var(--orange);
-    width: 40px;
+    width: 30px;
     height: 1px;
-    margin: 15px 0;
+    margin: 10px 0 20px 0;
+}
+
+.gray-dash {
+  background-color: var(--light);
+  width: 15px;
+  height: 1px;
+  margin: 10px 0;
 }
 
 .hamburguer-menu-icon {
@@ -128,4 +139,18 @@ button {
 
 .header-content {
   padding: 30px 20px 65px 20px;
+}
+
+.f-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chevron {
+  display: inline-block;
+  border-right: 2px solid var(--orange);
+  border-bottom: 2px solid var(--orange);
+  width: 7px; height: 7px;
+  transform: rotate(-315deg) translateX(5px) translateY(-7px);
 }
