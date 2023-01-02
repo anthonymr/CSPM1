@@ -225,6 +225,39 @@ footer img {
   width: 60%;
 }
 
+.floating-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #ec5242ee;
+  top: 0;
+  left: 0;
+  padding: 30px 30px;
+}
+
+.floating-menu__close {
+  color: white;
+  display: flex !important;
+  justify-content: flex-end;
+}
+
+.floating-menu__close img {
+  width: 25px;
+}
+
+.floating-menu ul {
+  list-style: none;
+}
+
+.floating-menu a {
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 50px 0;
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   footer {
     padding: var(--desktop-padding);
