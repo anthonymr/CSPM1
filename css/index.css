@@ -1,3 +1,11 @@
+header {
+  background-image: url('../img/background.svg');
+}
+
+.p-box {
+  font-size: 14px;
+}
+
 .main-program {
   background-color: var(--dark-blue);
   padding: 20px 20px 40px 20px;
@@ -115,4 +123,8 @@
   cursor: pointer;
   user-select: none;
   border-radius: 3px;
+}
+
+.header-content {
+  padding: 30px 20px 65px 20px;
 }
