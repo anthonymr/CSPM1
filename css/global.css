@@ -12,7 +12,8 @@
   --desktop-padding: 70px;
 }
 
-html, body {
+html,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -111,7 +112,7 @@ footer img {
   color: white;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip:text;  
+  background-clip: text;
 }
 
 .p-box {
@@ -159,7 +160,7 @@ footer img {
   user-select: none;
 }
 
-.hamburguer-menu-icon > div {
+.hamburguer-menu-icon>div {
   background-color: var(--medium);
   width: 30px;
   height: 6px;
@@ -190,7 +191,8 @@ footer img {
   display: inline-block;
   border-right: 2px solid var(--orange);
   border-bottom: 2px solid var(--orange);
-  width: 7px; height: 7px;
+  width: 7px;
+  height: 7px;
   transform: rotate(-315deg) translateX(5px) translateY(-7px);
 }
 
@@ -229,7 +231,7 @@ footer img {
     gap: 50px;
   }
 
-  footer > div:first-child{
+  footer>div:first-child {
     width: 400px;
     padding-left: 200px;
     flex: none;
@@ -280,6 +282,13 @@ footer img {
 
   .big-nav__logo {
     width: 300px;
+  }
+
+  .header-content__location a,
+  .big-nav a {
+    text-decoration: none;
+    border: none;
+    font-weight: 400;
   }
 
   .big-nav__logo img {
