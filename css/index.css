@@ -139,6 +139,10 @@ header {
     max-width: 700px;
   }
 
+  footer.desktop-only {
+    display: flex;
+  }
+
   .header-content {
     padding: 70px var(--desktop-padding);
   }
@@ -147,7 +151,7 @@ header {
     font-size: 24px;
     font-weight: 300;
   }
-  
+
   .p-box {
     max-width: 600px;
   }
@@ -202,5 +206,9 @@ header {
 
   .featured-speaker.desktop-only {
     display: flex;
+  }
+
+  .dark-chess-bg {
+    background-image: url('../img/light-chees-background.svg');
   }
 }
